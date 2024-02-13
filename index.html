@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -11,10 +15,10 @@
       <nav>
         <h1><a href="">ReQuiz</a></h1>
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Quiz</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
       <div class="home">
@@ -24,7 +28,48 @@
         <button><a href="">Start Quiz Now!</a></button>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div id="quiz" class="lesson">
+        <h2>Quiz Lesson</h2>
+        <div class="container-slider">
+          <div class="slider">
+            <div class="slide">
+              <img src="assets/logo-html.jpg" alt="logo HTML" />
+              <p>Programmer</p>
+              <p>HTML</p>
+            </div>
+            <div class="slide">
+              <img src="assets/logo-css.jpg" alt="logo CSS" />
+              <p>Programmer</p>
+              <p>CSS</p>
+            </div>
+            <div class="slide">
+              <img src="assets/logo-js.jpg" alt="logo Javascript" />
+              <p>Programmer</p>
+              <p>Javascript</p>
+            </div>
+            <div class="slide">
+              <p>Ilmu Alat</p>
+              <p>Al-jurumiyyah</p>
+            </div>
+            <div class="slide">
+              <p>Ilmu Alat</p>
+              <p>Al-imrity</p>
+            </div>
+            <div class="slide">
+              <p>Ilmu Alat</p>
+              <p>Shorof</p>
+            </div>
+          </div>
+          <button class="prevslide" onclick="prevSlide()">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <button class="nextslide" onclick="nextSlide()">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </div>
+    </main>
     <script src="javascript/script.js"></script>
   </body>
 </html>

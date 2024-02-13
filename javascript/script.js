@@ -12,3 +12,27 @@ links.forEach(function (link) {
     link.classList.add("active");
   });
 });
+
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function prevSlide() {
+  if (currentSlide == slides.length) {
+    currentSlide = 0;
+  }
+
+  if (currentSlide < slides.length) {
+    slider.appendChild(slides[currentSlide]);
+    currentSlide++;
+  }
+}
+
+function nextSlide() {
+  if (currentSlide == 0) {
+    currentSlide = slides.length;
+  }
+
+  slider.prepend(slides[currentSlide - 1]);
+  currentSlide--;
+}
