@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d3e0ea;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+nav {
+  width: 40%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+nav ul li {
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: #fff;
+}
+
+nav ul li i {
+  font-size: 1.5em;
+}
+
+.ri-bar-chart-2-fill {
+  color: #008000;
+}
+
+.ri-heart-fill {
+  color: #ff0000;
+}
+
+.ri-box-3-fill {
+  color: #800080;
+}
+
+.ri-account-circle-line {
+  font-size: 2.5em;
+}
+
+nav ul li p {
+  display: inline;
+  font-weight: 600;
+}
+
+.overlay {
+  position: absolute;
+  right: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 20px 5px #808080;
+  background-color: #808080;
+}
+
+.streak {
+  display: none;
+  top: 90px;
+  right: 428px;
+}
+
+.heart {
+  display: none;
+  top: 90px;
+  right: 307px;
+}
+
+.points {
+  display: none;
+  top: 90px;
+  right: 60px;
+}
+
+.active {
+  display: block;
+}
