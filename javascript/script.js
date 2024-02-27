@@ -85,3 +85,149 @@ document.addEventListener("click", (e) => {
   };
 
 });
+
+const one = document.querySelector(".one");
+const two = document.querySelector(".two");
+const three = document.querySelector(".three");
+const four = document.querySelector(".four");
+const five = document.querySelector(".five");
+const six = document.querySelector(".six");
+const seven = document.querySelector(".seven");
+
+const htmls = document.querySelectorAll(".html");
+const hup = document.querySelector(".hup");
+const hdown = document.querySelector(".hdown");
+
+const csss = document.querySelectorAll(".css");
+const cup = document.querySelector(".cup");
+const cdown = document.querySelector(".cdown");
+
+const jss = document.querySelectorAll(".js");
+const jup = document.querySelector(".jup");
+const jdown = document.querySelector(".jdown");
+
+const nodes = document.querySelectorAll(".node");
+const nup = document.querySelector(".nup");
+const ndown = document.querySelector(".ndown");
+
+const phps = document.querySelectorAll(".php");
+const pup = document.querySelector(".pup");
+const pdown = document.querySelector(".pdown");
+
+const pytons = document.querySelectorAll(".pyton");
+const yup = document.querySelector(".yup");
+const ydown = document.querySelector(".ydown");
+
+function show(n) {
+  if (n == 1) {
+    htmls.forEach((html) => {
+      html.style.display = "block";
+    });
+
+    one.style.border = "none";
+    hup.style.display = "none";
+    hdown.style.display = "block";
+
+  } else if (n == 2) {
+    csss.forEach((css) => {
+      css.style.display = "block";
+    });
+
+    two.style.border = "none";
+    cup.style.display = "none";
+    cdown.style.display = "block";
+
+  } else if (n == 3) {
+    jss.forEach((js) => {
+      js.style.display = "block";
+    });
+
+    three.style.border = "none";
+    jup.style.display = "none";
+    jdown.style.display = "block";
+
+  } else if (n == 4) {
+    nodes.forEach((node) => {
+      node.style.display = "block";
+    });
+
+    four.style.border = "none";
+    nup.style.display = "none";
+    ndown.style.display = "block";
+
+  } else if (n == 5) {
+    phps.forEach((php) => {
+      php.style.display = "block";
+    });
+
+    five.style.border = "none";
+    pup.style.display = "none";
+    pdown.style.display = "block";
+
+  } else {
+    pytons.forEach((pyton) => {
+      pyton.style.display = "block";
+    });
+
+    six.style.border = "none";
+    yup.style.display = "none";
+    ydown.style.display = "block";
+  };
+}
+
+function hide(n) {
+  if (n == 1) {
+    htmls.forEach((html) => {
+      html.style.display = "none";
+    });
+
+    one.style.borderBottom = "2px solid grey";
+    hdown.style.display = "none";
+    hup.style.display = "block";
+
+  } else if (n == 2) {
+    csss.forEach((css) => {
+      css.style.display = "none";
+    });
+
+    two.style.borderBottom = "2px solid grey";
+    cdown.style.display = "none";
+    cup.style.display = "block";
+
+  } else if (n == 3) {
+    jss.forEach((js) => {
+      js.style.display = "none";
+    });
+
+    three.style.borderBottom = "2px solid grey";
+    jdown.style.display = "none";
+    jup.style.display = "block";
+
+  } else if (n == 4) {
+    nodes.forEach((node) => {
+      node.style.display = "none";
+    });
+
+    four.style.borderBottom = "2px solid grey";
+    ndown.style.display = "none";
+    nup.style.display = "block";
+
+  } else if (n == 5) {
+    phps.forEach((php) => {
+      php.style.display = "none";
+    });
+
+    five.style.borderBottom = "2px solid grey";
+    pdown.style.display = "none";
+    pup.style.display = "block";
+
+  } else {
+    pytons.forEach((pyton) => {
+      pyton.style.display = "none";
+    });
+
+    six.style.borderBottom = "2px solid grey";
+    ydown.style.display = "none";
+    yup.style.display = "block";
+  };
+}

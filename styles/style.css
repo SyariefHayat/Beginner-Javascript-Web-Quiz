@@ -91,10 +91,18 @@ nav ul li a:hover,
   color: #fff;
 }
 
-.home button {
+.home a,
+.home a:visited {
+  display: block;
   width: 250px;
   height: 50px;
   margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+  text-decoration: none;
   background-color: #fff;
   border: none;
   border-radius: 5px;
@@ -103,13 +111,6 @@ nav ul li a:hover,
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   cursor: pointer;
-}
-
-.home button a {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #000;
-  text-decoration: none;
 }
 
 main {

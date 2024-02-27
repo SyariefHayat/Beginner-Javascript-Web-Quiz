@@ -80,33 +80,242 @@ nav ul li p {
   right: 10px;
   width: 300px;
   height: 300px;
+  text-align: center;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  box-shadow: 0 0 20px 5px #808080;
-  background-color: #808080;
+  background-color: #fff;
+  box-shadow: 0 0 20px 3px grey;
+  z-index: 10;
 }
 
 .streak {
   display: none;
+  width: 500px;
+  height: 200px;
+  padding: 40px;
   top: 90px;
   right: 428px;
 }
 
+.streak p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.circle i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: grey;
+}
+
 .heart {
   display: none;
+  height: 200px;
+  padding: 50px;
   top: 90px;
   right: 307px;
 }
 
+.heart p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.hrt-icons {
+  display: inline-block;
+  font-size: 2em;
+}
+
 .points {
   display: none;
+  width: 350px;
+  height: 450px;
+  padding: 20px;
   top: 90px;
   right: 60px;
 }
 
+.title {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.points-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+.points p:nth-child(2) {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.points p:nth-child(3) {
+  margin: 30px 0;
+  font-size: 14px;
+}
+
+.about {
+  margin: 10px 0 30px 0;
+  text-align: start;
+}
+
+.step {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step p {
+  font-size: 1em;
+}
+
 .active {
   display: block;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lesson {
+  position: relative;
+  width: 800px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid grey;
+}
+
+.easy,
+.medium,
+.hard {
+  display: none;
+  height: 220px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #eaeaea;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ri-play-fill {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: blue;
+}
+
+.lesson h4 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.ri-arrow-up-s-line,
+.ri-arrow-down-s-line {
+  position: absolute;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.ri-arrow-up-s-line {
+  right: 10px;
+}
+
+.ri-arrow-down-s-line {
+  display: none;
+  right: 10px;
+}
+
+.container i {
+  margin-right: 20px;
+  padding-left: 20px;
+  font-size: 3em;
+  color: blue;
+}
+
+.difficulty p:nth-child(1) {
+  margin: 10px 0 5px 0;
+}
+
+.difficulty p:nth-child(2) {
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.difficulty p:nth-child(3) {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid grey;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.lesson a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2em;
+  color: #000;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: aqua;
+  cursor: pointer;
 }
